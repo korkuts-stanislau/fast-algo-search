@@ -95,3 +95,273 @@ export const tscwAlgos: Algo[] = [
         startSecond: 91
     },
 ]
+
+export const epAlgos: Algo[] = [
+    {
+        title: "E1",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/uUHyp30d_Z8",
+        startSecond: 12
+    },
+    {
+        title: "E2",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/uUHyp30d_Z8",
+        startSecond: 22
+    },
+    {
+        title: "P1",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/uUHyp30d_Z8",
+        startSecond: 30
+    },
+    {
+        title: "P2",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/uUHyp30d_Z8",
+        startSecond: 39
+    },
+    {
+        title: "P3",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/uUHyp30d_Z8",
+        startSecond: 49
+    },
+    {
+        title: "P4",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/uUHyp30d_Z8",
+        startSecond: 57
+    },
+]
+
+export const ifAlgos: Algo[] = [
+    {
+        title: "I1",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/6egtt7UFoqY",
+        startSecond: 11
+    },
+    {
+        title: "I4",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/6egtt7UFoqY",
+        startSecond: 21
+    },
+    {
+        title: "I2",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/6egtt7UFoqY",
+        startSecond: 33
+    },
+    {
+        title: "I3",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/6egtt7UFoqY",
+        startSecond: 45
+    },
+    {
+        title: "F1",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/6egtt7UFoqY",
+        startSecond: 56
+    },
+    {
+        title: "F2",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/6egtt7UFoqY",
+        startSecond: 68
+    },
+    {
+        title: "F3",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/6egtt7UFoqY",
+        startSecond: 80
+    },
+    {
+        title: "F4",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/6egtt7UFoqY",
+        startSecond: 91
+    }
+]
+
+export const kaAlgos: Algo[] = [
+    {
+        title: "K1",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/1ekGbasbKwI",
+        startSecond: 11
+    },
+    {
+        title: "K2",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/1ekGbasbKwI",
+        startSecond: 21
+    },
+    {
+        title: "K4",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/1ekGbasbKwI",
+        startSecond: 31
+    },
+    {
+        title: "K3",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/1ekGbasbKwI",
+        startSecond: 40
+    },
+    {
+        title: "A1",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/1ekGbasbKwI",
+        startSecond: 50
+    },
+    {
+        title: "A2",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/1ekGbasbKwI",
+        startSecond: 61
+    },
+    {
+        title: "A3",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/1ekGbasbKwI",
+        startSecond: 73
+    },
+    {
+        title: "A4",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/1ekGbasbKwI",
+        startSecond: 86
+    },
+]
+
+export const lAlgos: Algo[] = [
+    {
+        title: "L2",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/LLPZRUpxFdw",
+        startSecond: 10
+    },
+    {
+        title: "L1",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/LLPZRUpxFdw",
+        startSecond: 20
+    },
+    {
+        title: "L3",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/LLPZRUpxFdw",
+        startSecond: 30
+    },
+    {
+        title: "L4",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/LLPZRUpxFdw",
+        startSecond: 41
+    },
+    {
+        title: "L5",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/LLPZRUpxFdw",
+        startSecond: 52
+    },
+    {
+        title: "L6",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/LLPZRUpxFdw",
+        startSecond: 64
+    },
+]
+
+export const bAlgos: Algo[] = [
+    {
+        title: "B1",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/dSNZVRCHNzg",
+        startSecond: 11
+    },
+    {
+        title: "B2",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/dSNZVRCHNzg",
+        startSecond: 21
+    },
+    {
+        title: "B3",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/dSNZVRCHNzg",
+        startSecond: 33
+    },
+    {
+        title: "B4",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/dSNZVRCHNzg",
+        startSecond: 45
+    },
+    {
+        title: "B5",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/dSNZVRCHNzg",
+        startSecond: 59
+    },
+    {
+        title: "B6",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/dSNZVRCHNzg",
+        startSecond: 70
+    }
+]
+
+export const oAlgos: Algo[] = [
+    {
+        title: "O1",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/5H0oYHHD_dQ",
+        startSecond: 12
+    },
+    {
+        title: "O2",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/5H0oYHHD_dQ",
+        startSecond: 26
+    },
+    {
+        title: "O3",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/5H0oYHHD_dQ",
+        startSecond: 40
+    },
+    {
+        title: "O4",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/5H0oYHHD_dQ",
+        startSecond: 54
+    },
+    {
+        title: "O6",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/5H0oYHHD_dQ",
+        startSecond: 67
+    },
+    {
+        title: "O7",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/5H0oYHHD_dQ",
+        startSecond: 81
+    },
+    {
+        title: "O5",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/5H0oYHHD_dQ",
+        startSecond: 92
+    },
+    {
+        title: "O8",
+        imgRef: "",
+        videoSrc: "https://www.youtube.com/embed/5H0oYHHD_dQ",
+        startSecond: 105
+    },
+]

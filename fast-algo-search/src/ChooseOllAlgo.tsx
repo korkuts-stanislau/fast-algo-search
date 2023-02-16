@@ -1,16 +1,20 @@
-import { ocllAlgos, tscwAlgos } from "./OllAlgosLists";
+import { bAlgos, epAlgos, ifAlgos, kaAlgos, lAlgos, oAlgos, ocllAlgos, tscwAlgos } from "./OllAlgosLists";
 import { Algo } from "./Types";
 
 type ChooseOllAlgoProps = {
-    setCurrentVideoWithTime: (src: string, startSec: number) => void;
+    activeAlgo: Algo;
+    setAlgo: (algo: Algo) => void;
 }
+
+const commonOllClassName = "grid grid-cols-8 gap-4";
 
 export const ChooseOllAlgo: React.FC<ChooseOllAlgoProps> = (props) => {
     const OllAlgoButton: React.FC<{algo:Algo}> = (algoProps) => {
         const {algo} = algoProps;
-        return <div onClick={() => props.setCurrentVideoWithTime(algo.videoSrc, algo.startSecond)}
-                    className="p-3 cursor-pointer bg-blue-300 rounded-md hover:bg-blue-500 w-[100px]"
-                    key={algo.title}>
+        return <div onClick={() => props.setAlgo(algo)}
+                    className={`p-3 cursor-pointer rounded-md hover:bg-blue-800 active:bg-blue-900 w-[100px] ${
+                        algo.title === props.activeAlgo.title ? "bg-emerald-800" : "bg-blue-700"
+                    }`}>
                 <span>{algo.title}</span>
             </div>
     }
@@ -18,12 +22,36 @@ export const ChooseOllAlgo: React.FC<ChooseOllAlgoProps> = (props) => {
     return <div className="pt-3 px-10">
         <h1 className="text-3xl font-bold mb-8">OLL</h1>
         <hr className="my-4 "/>
-        <div className="grid grid-cols-5 gap-4">
-            {ocllAlgos.map(a => <OllAlgoButton algo={a}/>)}
+        <div className={commonOllClassName}>
+            {ocllAlgos.map(a => <OllAlgoButton algo={a} key={a.title}/>)}
         </div>
         <hr className="my-4 "/>
-        <div className="grid grid-cols-5 gap-4">
-            {tscwAlgos.map(a => <OllAlgoButton algo={a}/>)}
+        <div className={commonOllClassName}>
+            {tscwAlgos.map(a => <OllAlgoButton algo={a} key={a.title}/>)}
+        </div>
+        <hr className="my-4 "/>
+        <div className={commonOllClassName}>
+            {epAlgos.map(a => <OllAlgoButton algo={a} key={a.title}/>)}
+        </div>
+        <hr className="my-4 "/>
+        <div className={commonOllClassName}>
+            {ifAlgos.map(a => <OllAlgoButton algo={a} key={a.title}/>)}
+        </div>
+        <hr className="my-4 "/>
+        <div className={commonOllClassName}>
+            {kaAlgos.map(a => <OllAlgoButton algo={a} key={a.title}/>)}
+        </div>
+        <hr className="my-4 "/>
+        <div className={commonOllClassName}>
+            {lAlgos.map(a => <OllAlgoButton algo={a} key={a.title}/>)}
+        </div>
+        <hr className="my-4 "/>
+        <div className={commonOllClassName}>
+            {bAlgos.map(a => <OllAlgoButton algo={a} key={a.title}/>)}
+        </div>
+        <hr className="my-4 "/>
+        <div className={commonOllClassName}>
+            {oAlgos.map(a => <OllAlgoButton algo={a} key={a.title}/>)}
         </div>
         <hr className="my-4 "/>
     </div>
