@@ -1,9 +1,10 @@
 import { Algo } from "./Types";
+import ocll6 from "./assets/ocll/ocll6.png";
 
 export const ocllAlgos: Algo[] = [
     {
         title: "OCLL6",
-        imgRef: "",
+        imgRef: ocll6,
         videoSrc: "https://www.youtube.com/embed/8LVPHtzhiNU",
         startSecond: 11
     },
