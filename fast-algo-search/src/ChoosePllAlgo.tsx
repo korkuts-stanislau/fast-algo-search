@@ -11,8 +11,6 @@ const commonPllClassName = "grid grid-cols-3 gap-4";
 export const ChoosePllAlgo: React.FC<ChoosePllAlgoProps> = (props) => {
     const PllAlgoButton: React.FC<{algo:Algo}> = (algoProps) => {
         const {algo} = algoProps;
-        console.log(algo.title);
-        console.log(props.activeAlgo.title);
         return <div onClick={() => props.setAlgo(algo)}
                     className={`p-3 cursor-pointer rounded-md hover:bg-red-800 active:bg-red-900 w-[100px] ${
                         algo.title === props.activeAlgo.title ? "bg-emerald-800" : "bg-red-700"

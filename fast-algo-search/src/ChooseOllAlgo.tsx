@@ -6,7 +6,7 @@ type ChooseOllAlgoProps = {
     setAlgo: (algo: Algo) => void;
 }
 
-const commonOllClassName = "grid grid-cols-8 gap-4";
+const commonOllClassName = "grid 2xl:grid-cols-8 lg:grid-cols-6 grid-cols-3 gap-4";
 
 export const ChooseOllAlgo: React.FC<ChooseOllAlgoProps> = (props) => {
     const OllAlgoButton: React.FC<{algo:Algo}> = (algoProps) => {
