@@ -21,7 +21,7 @@ export const ChoosePllAlgo: React.FC<ChoosePllAlgoProps> = (props) => {
     }
 
     return <div className="pt-3 px-10">
-        <h1 className="text-3xl font-bold mb-8">PLL</h1>
+        <h1 className="text-3xl font-bold mb-8">PLL (21 case)</h1>
         <hr className="my-4 "/>
         <div className={commonPllClassName}>
             {edgesOnlyAlgos.map(a => <PllAlgoButton algo={a} key={a.title}/>)}

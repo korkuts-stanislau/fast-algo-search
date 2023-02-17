@@ -24,10 +24,10 @@ function App() {
       <VideoPlayer 
         videoSrc={activeAlgo.videoSrc} 
         startSecond={activeAlgo.startSecond} 
-        className="fixed w-[100%] lg:h-[50rem] h-[30rem]"
+        className="fixed w-[100%] lg:h-[50rem] h-[20rem]"
         key={lastUpdateTime}/>
 
-      <div className='bg-black lg:h-[50rem] h-[30rem]'></div>
+      <div className='bg-black lg:h-[50rem] h-[20rem]'></div>
       <div className='flex lg:flex-row flex-col justify-around my-8'>
         <ChooseOllAlgo setAlgo={setAlgo} activeAlgo={activeAlgo}/>
         <ChoosePllAlgo setAlgo={setAlgo} activeAlgo={activeAlgo}/>

@@ -21,7 +21,7 @@ export const ChooseOllAlgo: React.FC<ChooseOllAlgoProps> = (props) => {
     }
 
     return <div className="pt-3 px-10">
-        <h1 className="text-3xl font-bold mb-8">OLL</h1>
+        <h1 className="text-3xl font-bold mb-8">OLL (57 cases)</h1>
         <hr className="my-4 "/>
         <div className={commonOllClassName}>
             {ocllAlgos.map(a => <OllAlgoButton algo={a} key={a.title}/>)}
