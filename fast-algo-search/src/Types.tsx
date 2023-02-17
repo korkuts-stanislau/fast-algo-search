@@ -3,4 +3,5 @@ export type Algo = {
     imgRef: string;
     videoSrc: string;
     startSecond: number;
+    endSecond?: number;
 }

@@ -70,7 +70,8 @@ export const ocllAlgos: Algo[] = [
         title: "OCLL6",
         imgRef: ocll6,
         videoSrc: "https://www.youtube.com/embed/8LVPHtzhiNU",
-        startSecond: 11
+        startSecond: 11,
+        endSecond: 19
     },
     {
         title: "OCLL7",
