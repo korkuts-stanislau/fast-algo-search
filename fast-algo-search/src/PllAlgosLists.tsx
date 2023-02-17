@@ -31,25 +31,29 @@ export const edgesOnlyAlgos: Algo[] = [
         title: "Ub",
         imgRef: ub,
         videoSrc: "https://www.youtube.com/embed/_B8vd_r27uo",
-        startSecond: 8
+        startSecond: 8,
+        endSecond: 23
     },
     {
         title: "Ua",
         imgRef: ua,
         videoSrc: "https://www.youtube.com/embed/_B8vd_r27uo",
-        startSecond: 44
+        startSecond: 44,
+        endSecond: 53
     },
     {
         title: "Z",
         imgRef: z,
         videoSrc: "https://www.youtube.com/embed/_B8vd_r27uo",
-        startSecond: 86
+        startSecond: 86,
+        endSecond: 105
     },
     {
         title: "H",
         imgRef: h,
         videoSrc: "https://www.youtube.com/embed/_B8vd_r27uo",
-        startSecond: 131
+        startSecond: 131,
+        endSecond: 144
     },
 ]
 
@@ -58,19 +62,22 @@ export const cornersOnlyAlgos: Algo[] = [
         title: "Aa",
         imgRef: aa,
         videoSrc: "https://www.youtube.com/embed/LKUqkbidsVw",
-        startSecond: 10
+        startSecond: 10,
+        endSecond: 22
     },
     {
         title: "Ab",
         imgRef: ab,
         videoSrc: "https://www.youtube.com/embed/LKUqkbidsVw",
-        startSecond: 40
+        startSecond: 40,
+        endSecond: 50
     },
     {
         title: "E",
         imgRef: e,
         videoSrc: "https://www.youtube.com/embed/LKUqkbidsVw",
-        startSecond: 69
+        startSecond: 69,
+        endSecond: 81
     }
 ]
 
@@ -79,37 +86,43 @@ export const oneSetAdjCornersAlgos: Algo[] = [
         title: "Ra",
         imgRef: ra,
         videoSrc: "https://www.youtube.com/embed/46U2MUEDfqg",
-        startSecond: 8
+        startSecond: 8,
+        endSecond: 22
     },
     {
         title: "Rb",
         imgRef: rb,
         videoSrc: "https://www.youtube.com/embed/46U2MUEDfqg",
-        startSecond: 65
+        startSecond: 65,
+        endSecond: 77
     },
     {
         title: "Ja",
         imgRef: ja,
         videoSrc: "https://www.youtube.com/embed/46U2MUEDfqg",
-        startSecond: 99
+        startSecond: 99,
+        endSecond: 109
     },
     {
         title: "Jb",
         imgRef: jb,
         videoSrc: "https://www.youtube.com/embed/46U2MUEDfqg",
-        startSecond: 130
+        startSecond: 130,
+        endSecond: 142
     },
     {
         title: "T",
         imgRef: t,
         videoSrc: "https://www.youtube.com/embed/46U2MUEDfqg",
-        startSecond: 150
+        startSecond: 150,
+        endSecond: 162
     },
     {
         title: "F",
         imgRef: f,
         videoSrc: "https://www.youtube.com/embed/46U2MUEDfqg",
-        startSecond: 169
+        startSecond: 169,
+        endSecond: 181
     },
 ]
 
@@ -118,25 +131,29 @@ export const oneSetDiagCornersAlgos: Algo[] = [
         title: "V",
         imgRef: v,
         videoSrc: "https://www.youtube.com/embed/G94o_vh7NMM",
-        startSecond: 8
+        startSecond: 8,
+        endSecond: 20
     },
     {
         title: "Y",
         imgRef: y,
         videoSrc: "https://www.youtube.com/embed/G94o_vh7NMM",
-        startSecond: 25
+        startSecond: 25,
+        endSecond: 38
     },
     {
         title: "Na",
         imgRef: na,
         videoSrc: "https://www.youtube.com/embed/G94o_vh7NMM",
-        startSecond: 43
+        startSecond: 43,
+        endSecond: 60
     },
     {
         title: "Nb",
         imgRef: nb,
         videoSrc: "https://www.youtube.com/embed/G94o_vh7NMM",
-        startSecond: 89
+        startSecond: 89,
+        endSecond: 101
     },
 ]
 
@@ -145,24 +162,28 @@ export const gAlgos: Algo[] = [
         title: "Ga",
         imgRef: ga,
         videoSrc: "https://www.youtube.com/embed/8g90YRImpqw",
-        startSecond: 8
+        startSecond: 8,
+        endSecond: 22
     },
     {
         title: "Gb",
         imgRef: gb,
         videoSrc: "https://www.youtube.com/embed/8g90YRImpqw",
-        startSecond: 44
+        startSecond: 44,
+        endSecond: 57
     },
     {
         title: "Gc",
         imgRef: gc,
         videoSrc: "https://www.youtube.com/embed/8g90YRImpqw",
-        startSecond: 86
+        startSecond: 86,
+        endSecond: 98
     },
     {
         title: "Gd",
         imgRef: gd,
         videoSrc: "https://www.youtube.com/embed/8g90YRImpqw",
-        startSecond: 127
+        startSecond: 127,
+        endSecond: 140
     }
 ]

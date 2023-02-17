@@ -77,37 +77,43 @@ export const ocllAlgos: Algo[] = [
         title: "OCLL7",
         imgRef: ocll7,
         videoSrc: "https://www.youtube.com/embed/8LVPHtzhiNU",
-        startSecond: 21
+        startSecond: 21,
+        endSecond: 27
     },
     {
         title: "OCLL1",
         imgRef: ocll1,
         videoSrc: "https://www.youtube.com/embed/8LVPHtzhiNU",
-        startSecond: 31
+        startSecond: 31,
+        endSecond: 40
     },
     {
         title: "OCLL2",
         imgRef: ocll2,
         videoSrc: "https://www.youtube.com/embed/8LVPHtzhiNU",
-        startSecond: 43
+        startSecond: 43,
+        endSecond: 52
     },
     {
         title: "OCLL4",
         imgRef: ocll4,
         videoSrc: "https://www.youtube.com/embed/8LVPHtzhiNU",
-        startSecond: 53
+        startSecond: 53,
+        endSecond: 59
     },
     {
         title: "OCLL5",
         imgRef: ocll5,
         videoSrc: "https://www.youtube.com/embed/8LVPHtzhiNU",
-        startSecond: 62
+        startSecond: 62,
+        endSecond: 68
     },
     {
         title: "OCLL3",
         imgRef: ocll3,
         videoSrc: "https://www.youtube.com/embed/8LVPHtzhiNU",
-        startSecond: 71
+        startSecond: 71,
+        endSecond: 83
     }
 ]
 
@@ -116,49 +122,57 @@ export const tscwAlgos: Algo[] = [
         title: "T1",
         imgRef: t1,
         videoSrc: "https://www.youtube.com/embed/8UtGK9ME5dg",
-        startSecond: 13
+        startSecond: 13,
+        endSecond: 19
     },
     {
         title: "T2",
         imgRef: t2,
         videoSrc: "https://www.youtube.com/embed/8UtGK9ME5dg",
-        startSecond: 22
+        startSecond: 22,
+        endSecond: 28
     },
     {
         title: "S1",
         imgRef: s1,
         videoSrc: "https://www.youtube.com/embed/8UtGK9ME5dg",
-        startSecond: 30
+        startSecond: 30,
+        endSecond: 39
     },
     {
         title: "S2",
         imgRef: s2,
         videoSrc: "https://www.youtube.com/embed/8UtGK9ME5dg",
-        startSecond: 42
+        startSecond: 42,
+        endSecond: 49
     },
     {
         title: "C1",
         imgRef: c1,
         videoSrc: "https://www.youtube.com/embed/8UtGK9ME5dg",
-        startSecond: 51
+        startSecond: 51,
+        endSecond: 63
     },
     {
         title: "C2",
         imgRef: c2,
         videoSrc: "https://www.youtube.com/embed/8UtGK9ME5dg",
-        startSecond: 65
+        startSecond: 65,
+        endSecond: 73
     },
     {
         title: "W1",
         imgRef: w1,
         videoSrc: "https://www.youtube.com/embed/8UtGK9ME5dg",
-        startSecond: 77
+        startSecond: 77,
+        endSecond: 88
     },
     {
         title: "W2",
         imgRef: w2,
         videoSrc: "https://www.youtube.com/embed/8UtGK9ME5dg",
-        startSecond: 91
+        startSecond: 91,
+        endSecond: 99
     },
 ]
 
@@ -167,37 +181,43 @@ export const epAlgos: Algo[] = [
         title: "E1",
         imgRef: e1,
         videoSrc: "https://www.youtube.com/embed/uUHyp30d_Z8",
-        startSecond: 12
+        startSecond: 12,
+        endSecond: 20
     },
     {
         title: "E2",
         imgRef: e2,
         videoSrc: "https://www.youtube.com/embed/uUHyp30d_Z8",
-        startSecond: 22
+        startSecond: 22,
+        endSecond: 28
     },
     {
         title: "P1",
         imgRef: p1,
         videoSrc: "https://www.youtube.com/embed/uUHyp30d_Z8",
-        startSecond: 30
+        startSecond: 30,
+        endSecond: 36
     },
     {
         title: "P2",
         imgRef: p2,
         videoSrc: "https://www.youtube.com/embed/uUHyp30d_Z8",
-        startSecond: 39
+        startSecond: 39,
+        endSecond: 47
     },
     {
         title: "P3",
         imgRef: p3,
         videoSrc: "https://www.youtube.com/embed/uUHyp30d_Z8",
-        startSecond: 49
+        startSecond: 49,
+        endSecond: 55
     },
     {
         title: "P4",
         imgRef: p4,
         videoSrc: "https://www.youtube.com/embed/uUHyp30d_Z8",
-        startSecond: 57
+        startSecond: 57,
+        endSecond: 62
     },
 ]
 
@@ -206,49 +226,57 @@ export const ifAlgos: Algo[] = [
         title: "I1",
         imgRef: i1,
         videoSrc: "https://www.youtube.com/embed/6egtt7UFoqY",
-        startSecond: 11
+        startSecond: 11,
+        endSecond: 18
     },
     {
         title: "I4",
         imgRef: i4,
         videoSrc: "https://www.youtube.com/embed/6egtt7UFoqY",
-        startSecond: 21
+        startSecond: 21,
+        endSecond: 31
     },
     {
         title: "I2",
         imgRef: i2,
         videoSrc: "https://www.youtube.com/embed/6egtt7UFoqY",
-        startSecond: 33
+        startSecond: 33,
+        endSecond: 41
     },
     {
         title: "I3",
         imgRef: i3,
         videoSrc: "https://www.youtube.com/embed/6egtt7UFoqY",
-        startSecond: 45
+        startSecond: 45,
+        endSecond: 54
     },
     {
         title: "F1",
         imgRef: f1,
         videoSrc: "https://www.youtube.com/embed/6egtt7UFoqY",
-        startSecond: 56
+        startSecond: 56,
+        endSecond: 66
     },
     {
         title: "F2",
         imgRef: f2,
         videoSrc: "https://www.youtube.com/embed/6egtt7UFoqY",
-        startSecond: 68
+        startSecond: 68,
+        endSecond: 78
     },
     {
         title: "F3",
         imgRef: f3,
         videoSrc: "https://www.youtube.com/embed/6egtt7UFoqY",
-        startSecond: 80
+        startSecond: 80,
+        endSecond: 89
     },
     {
         title: "F4",
         imgRef: f4,
         videoSrc: "https://www.youtube.com/embed/6egtt7UFoqY",
-        startSecond: 91
+        startSecond: 91,
+        endSecond: 97
     }
 ]
 
@@ -257,49 +285,57 @@ export const kaAlgos: Algo[] = [
         title: "K1",
         imgRef: k1,
         videoSrc: "https://www.youtube.com/embed/1ekGbasbKwI",
-        startSecond: 11
+        startSecond: 11,
+        endSecond: 19
     },
     {
         title: "K2",
         imgRef: k2,
         videoSrc: "https://www.youtube.com/embed/1ekGbasbKwI",
-        startSecond: 21
+        startSecond: 21,
+        endSecond: 28
     },
     {
         title: "K4",
         imgRef: k4,
         videoSrc: "https://www.youtube.com/embed/1ekGbasbKwI",
-        startSecond: 31
+        startSecond: 31,
+        endSecond: 38
     },
     {
         title: "K3",
         imgRef: k3,
         videoSrc: "https://www.youtube.com/embed/1ekGbasbKwI",
-        startSecond: 40
+        startSecond: 40,
+        endSecond: 47
     },
     {
         title: "A1",
         imgRef: a1,
         videoSrc: "https://www.youtube.com/embed/1ekGbasbKwI",
-        startSecond: 50
+        startSecond: 50,
+        endSecond: 59
     },
     {
         title: "A2",
         imgRef: a2,
         videoSrc: "https://www.youtube.com/embed/1ekGbasbKwI",
-        startSecond: 61
+        startSecond: 61,
+        endSecond: 71
     },
     {
         title: "A3",
         imgRef: a3,
         videoSrc: "https://www.youtube.com/embed/1ekGbasbKwI",
-        startSecond: 73
+        startSecond: 73,
+        endSecond: 84
     },
     {
         title: "A4",
         imgRef: a4,
         videoSrc: "https://www.youtube.com/embed/1ekGbasbKwI",
-        startSecond: 86
+        startSecond: 86,
+        endSecond: 98
     },
 ]
 
@@ -308,37 +344,43 @@ export const lAlgos: Algo[] = [
         title: "L2",
         imgRef: l2,
         videoSrc: "https://www.youtube.com/embed/LLPZRUpxFdw",
-        startSecond: 10
+        startSecond: 10,
+        endSecond: 18
     },
     {
         title: "L1",
         imgRef: l1,
         videoSrc: "https://www.youtube.com/embed/LLPZRUpxFdw",
-        startSecond: 20
+        startSecond: 20,
+        endSecond: 28
     },
     {
         title: "L3",
         imgRef: l3,
         videoSrc: "https://www.youtube.com/embed/LLPZRUpxFdw",
-        startSecond: 30
+        startSecond: 30,
+        endSecond: 39
     },
     {
         title: "L4",
         imgRef: l4,
         videoSrc: "https://www.youtube.com/embed/LLPZRUpxFdw",
-        startSecond: 41
+        startSecond: 41,
+        endSecond: 50
     },
     {
         title: "L5",
         imgRef: l5,
         videoSrc: "https://www.youtube.com/embed/LLPZRUpxFdw",
-        startSecond: 52
+        startSecond: 52,
+        endSecond: 61
     },
     {
         title: "L6",
         imgRef: l6,
         videoSrc: "https://www.youtube.com/embed/LLPZRUpxFdw",
-        startSecond: 64
+        startSecond: 64,
+        endSecond: 70
     },
 ]
 
@@ -347,37 +389,43 @@ export const bAlgos: Algo[] = [
         title: "B1",
         imgRef: b1,
         videoSrc: "https://www.youtube.com/embed/dSNZVRCHNzg",
-        startSecond: 11
+        startSecond: 11,
+        endSecond: 19
     },
     {
         title: "B2",
         imgRef: b2,
         videoSrc: "https://www.youtube.com/embed/dSNZVRCHNzg",
-        startSecond: 21
+        startSecond: 21,
+        endSecond: 30
     },
     {
         title: "B3",
         imgRef: b3,
         videoSrc: "https://www.youtube.com/embed/dSNZVRCHNzg",
-        startSecond: 33
+        startSecond: 33,
+        endSecond: 42
     },
     {
         title: "B4",
         imgRef: b4,
         videoSrc: "https://www.youtube.com/embed/dSNZVRCHNzg",
-        startSecond: 45
+        startSecond: 45,
+        endSecond: 56
     },
     {
         title: "B5",
         imgRef: b5,
         videoSrc: "https://www.youtube.com/embed/dSNZVRCHNzg",
-        startSecond: 59
+        startSecond: 59,
+        endSecond: 67
     },
     {
         title: "B6",
         imgRef: b6,
         videoSrc: "https://www.youtube.com/embed/dSNZVRCHNzg",
-        startSecond: 70
+        startSecond: 70,
+        endSecond: 77
     }
 ]
 
@@ -386,48 +434,56 @@ export const oAlgos: Algo[] = [
         title: "O1",
         imgRef: o1,
         videoSrc: "https://www.youtube.com/embed/5H0oYHHD_dQ",
-        startSecond: 12
+        startSecond: 12,
+        endSecond: 22
     },
     {
         title: "O2",
         imgRef: o2,
         videoSrc: "https://www.youtube.com/embed/5H0oYHHD_dQ",
-        startSecond: 26
+        startSecond: 26,
+        endSecond: 37
     },
     {
         title: "O3",
         imgRef: o3,
         videoSrc: "https://www.youtube.com/embed/5H0oYHHD_dQ",
-        startSecond: 40
+        startSecond: 40,
+        endSecond: 50
     },
     {
         title: "O4",
         imgRef: o4,
         videoSrc: "https://www.youtube.com/embed/5H0oYHHD_dQ",
-        startSecond: 54
+        startSecond: 54,
+        endSecond: 64
     },
     {
         title: "O6",
         imgRef: o6,
         videoSrc: "https://www.youtube.com/embed/5H0oYHHD_dQ",
-        startSecond: 67
+        startSecond: 67,
+        endSecond: 78
     },
     {
         title: "O7",
         imgRef: o7,
         videoSrc: "https://www.youtube.com/embed/5H0oYHHD_dQ",
-        startSecond: 81
+        startSecond: 81,
+        endSecond: 90
     },
     {
         title: "O5",
         imgRef: o5,
         videoSrc: "https://www.youtube.com/embed/5H0oYHHD_dQ",
-        startSecond: 92
+        startSecond: 92,
+        endSecond: 102
     },
     {
         title: "O8",
         imgRef: o8,
         videoSrc: "https://www.youtube.com/embed/5H0oYHHD_dQ",
-        startSecond: 105
+        startSecond: 105,
+        endSecond: 115
     },
 ]
