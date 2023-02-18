@@ -1,35 +1,73 @@
-import { useState } from "react"
+import { useState } from 'react';
 
 type TutorialProps = {
+  clearStorage: () => void;
+};
 
-}
-
-const buttonClassName = "text-green-300"
+const keyClassName = 'text-green-300';
 
 export const Tutorial: React.FC<TutorialProps> = (props) => {
-    const [opened, setOpened] = useState(false);
+  const [opened, setOpened] = useState(false);
 
-    return <div className="mt-6 lg:mb-0 mb-2">
-        <h1 className="text-2xl lg:text-center cursor-default mx-10">
-            Hotkeys tutorial
-            {!opened && <span className="inline-block mx-4 bg-green-300 text-black px-[4px] py-[2px] rounded-sm cursor-pointer text-xl -translate-y-[1px]"
-                                onClick={() => setOpened(true)}>
-                Open
-            </span>}
-            {opened && <span className="inline-block mx-4 bg-red-300 text-black px-[4px] py-[2px] rounded-sm cursor-pointer text-xl -translate-y-[1px]"
-                                onClick={() => setOpened(false)}>
-                Close
-            </span>}
-        </h1>
-        {opened && <div className="bg-gray-600 rounded-md m-auto lg:w-[500px] w-[85%] mt-4 p-4">
-            <ul className="list-disc px-4 cursor-default">
-                <li>To pause/resume video press <span className={buttonClassName}>Space</span></li>
-                <li>To mute video press <span className={buttonClassName}>M</span></li>
-                <li>To unmute video press <span className={buttonClassName}>U</span></li>
-                <li>To restart algorithm press <span className={buttonClassName}>R</span></li>
-                <li>To show all algorithms press <span className={buttonClassName}>A</span> (In process)</li>
-                <li>To show easiest algorithms press <span className={buttonClassName}>E</span> (In process)</li>
-            </ul>
-        </div>}
+  const handleClearDataButton = () => {
+    if (confirm('Are you sure you want to delete all data?')) {
+      props.clearStorage();
+    }
+  };
+
+  return (
+    <div>
+      <h1
+        className="text-2xl text-center cursor-pointer bg-blue-300 hover:bg-blue-400 active:bg-blue-500 text-black px-[4px] py-[2px]"
+        onClick={() => setOpened(!opened)}
+      >
+        Tutorial
+      </h1>
+      {opened && (
+        <div className="bg-gray-600 rounded-md m-auto lg:w-[700px] w-[90%] my-4 p-4">
+          <ul className="list-disc px-4 cursor-default">
+            <p>Hotkeys</p>
+            <li>
+              To pause/resume video press{' '}
+              <span className={keyClassName}>Space</span>
+            </li>
+            <li>
+              To mute video press <span className={keyClassName}>M</span>
+            </li>
+            <li>
+              To unmute video press <span className={keyClassName}>U</span>
+            </li>
+            <li>
+              To restart algorithm press <span className={keyClassName}>R</span>
+            </li>
+            <li>
+              To show all algorithms press{' '}
+              <span className={keyClassName}>A</span>
+            </li>
+            <li>
+              To show unlearned algorithms press{' '}
+              <span className={keyClassName}>L</span>
+            </li>
+            <li>
+              To show easiest algorithms press{' '}
+              <span className={keyClassName}>E</span> (In process)
+            </li>
+            <hr className="my-2" />
+            <p>Info</p>
+            <li>Your data stored only in this browser</li>
+            <li>If you clean page cash data will be lost</li>
+            <li>
+              If you want to remove all application data click{' '}
+              <button
+                className="bg-red-700 hover:bg-red-800 active:bg-red-900 rounded-md px-[4px]"
+                onClick={handleClearDataButton}
+              >
+                here
+              </button>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
-}
+  );
+};

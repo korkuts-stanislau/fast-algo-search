@@ -1,45 +1,97 @@
-import { useState } from 'react'
-import './App.css'
+import { useEffect, useState } from 'react';
+import './App.css';
 import { ChooseOllAlgo } from './ChooseOllAlgo';
 import { ChoosePllAlgo } from './ChoosePllAlgo';
+import {
+  clearStorage,
+  getFromStorageOrGenerate,
+  saveToStorage,
+} from './Storage';
+import { Trainer } from './Trainer';
 import { Tutorial } from './Tutorial';
-import { Algo } from './Types';
-import { VideoPlayer } from './VideoPlayer'
+import { Algo, Filter, UserAlgoInfo } from './Types';
+import { VideoPlayer } from './VideoPlayer';
 
 const defaultAlgo: Algo = {
-  title: "",
+  title: '',
   videoSrc: 'https://www.youtube.com/embed/q1RiCZ4v9jU',
-  imgRef: "",
+  imgRef: '',
   startSecond: 0,
-  endSecond: 1000
-}
+  endSecond: 1000,
+};
 
 function App() {
   const [activeAlgo, setActiveAlgo] = useState<Algo>(defaultAlgo);
+  const [userAlgosInfo, setUserAlgosInfo] = useState(getFromStorageOrGenerate);
 
   const [sameAlgoUpdateFlag, setSameAlgoUpdateFlag] = useState(false);
 
+  const [filter, setFilter] = useState<Filter>('all');
+
+  useEffect(() => {
+    window.addEventListener('keydown', onKeyDown);
+  }, []);
+
+  const onKeyDown = (ev: globalThis.KeyboardEvent) => {
+    const overwrittenKeys = ['KeyA', 'KeyL'];
+    if (overwrittenKeys.includes(ev.code)) {
+      ev.preventDefault();
+    }
+    if (ev.code === 'KeyA') {
+      setFilter('all');
+    } else if (ev.code === 'KeyL') {
+      setFilter('unlearned');
+    }
+  };
+
+  const setAlgoInfo = (algoInfo: UserAlgoInfo) => {
+    const newAlgosInfo = userAlgosInfo.map((a) =>
+      a.title === algoInfo.title ? algoInfo : a,
+    );
+    saveToStorage(newAlgosInfo);
+    setUserAlgosInfo(newAlgosInfo);
+  };
+
   const setAlgo = (algo: Algo) => {
     setActiveAlgo(algo);
-    // the same algo as before
-    if(algo === activeAlgo) {
+    if (algo === activeAlgo) {
       setSameAlgoUpdateFlag(!sameAlgoUpdateFlag);
     }
-  }
+  };
 
-  // TODO?: add timer
+  const handleClearStorage = () => {
+    clearStorage();
+    setUserAlgosInfo(getFromStorageOrGenerate);
+  };
 
   return (
     <div>
-      <VideoPlayer defaultVideoSrc={defaultAlgo.videoSrc} algo={activeAlgo} sameAlgoUpdateFlag={sameAlgoUpdateFlag}/>
-      <div className='bg-black lg:h-[50rem] h-[20rem]'></div>
-      <Tutorial/>
-      <div className='flex lg:flex-row flex-col justify-around mb-8'>
-        <ChooseOllAlgo setAlgo={setAlgo} activeAlgo={activeAlgo}/>
-        <ChoosePllAlgo setAlgo={setAlgo} activeAlgo={activeAlgo}/>
+      <VideoPlayer
+        defaultVideoSrc={defaultAlgo.videoSrc}
+        algo={activeAlgo}
+        sameAlgoUpdateFlag={sameAlgoUpdateFlag}
+      />
+      <div className="bg-black lg:h-[40rem] h-[20rem]"></div>
+      <Tutorial clearStorage={handleClearStorage} />
+      <Trainer />
+      <div className="flex lg:flex-row flex-col justify-around mt-4 mb-8">
+        <ChooseOllAlgo
+          setAlgo={setAlgo}
+          activeAlgo={activeAlgo}
+          userAlgosInfo={userAlgosInfo}
+          setUserAlgoInfo={setAlgoInfo}
+          filter={filter}
+        />
+        <ChoosePllAlgo
+          setAlgo={setAlgo}
+          activeAlgo={activeAlgo}
+          userAlgosInfo={userAlgosInfo}
+          setUserAlgoInfo={setAlgoInfo}
+          filter={filter}
+        />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
