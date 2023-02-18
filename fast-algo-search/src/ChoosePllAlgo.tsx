@@ -2,7 +2,7 @@ import { cornersOnlyAlgos, edgesOnlyAlgos, gAlgos, oneSetAdjCornersAlgos, oneSet
 import { Algo } from "./Types";
 
 type ChoosePllAlgoProps = {
-    activeAlgo: Algo;
+    activeAlgo: Algo | undefined;
     setAlgo: (algo: Algo) => void;
 }
 
@@ -13,7 +13,7 @@ export const ChoosePllAlgo: React.FC<ChoosePllAlgoProps> = (props) => {
         const {algo} = algoProps;
         return <div onClick={() => props.setAlgo(algo)}
                     className={`p-3 flex flex-col items-center gap-2 cursor-pointer rounded-md hover:bg-red-800 active:bg-red-900 w-[100px] ${
-                        algo.title === props.activeAlgo.title ? "bg-emerald-800" : "bg-red-700"
+                        props.activeAlgo !== undefined && algo.title === props.activeAlgo.title ? "bg-emerald-800" : "bg-red-700"
                     }`}>
                 <div>{algo.title}</div>
                 <img src={algo.imgRef} alt={algo.title} className="h-12 w-12"/>

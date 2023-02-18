@@ -2,28 +2,39 @@ import { useState } from 'react'
 import './App.css'
 import { ChooseOllAlgo } from './ChooseOllAlgo';
 import { ChoosePllAlgo } from './ChoosePllAlgo';
+import { Tutorial } from './Tutorial';
 import { Algo } from './Types';
 import { VideoPlayer } from './VideoPlayer'
 
+const defaultAlgo: Algo = {
+  title: "",
+  videoSrc: 'https://www.youtube.com/embed/q1RiCZ4v9jU',
+  imgRef: "",
+  startSecond: 0,
+  endSecond: 1000
+}
+
 function App() {
-  const [activeAlgo, setActiveAlgo] = useState<Algo>({
-    title: "Initital",
-    videoSrc: 'https://www.youtube.com/embed/q1RiCZ4v9jU',
-    imgRef: "",
-    startSecond: 0
-  });
-  const [updateFlag, setUpdateFlag] = useState(false);
+  const [activeAlgo, setActiveAlgo] = useState<Algo>(defaultAlgo);
+
+  const [sameAlgoUpdateFlag, setSameAlgoUpdateFlag] = useState(false);
 
   const setAlgo = (algo: Algo) => {
     setActiveAlgo(algo);
-    setUpdateFlag(!updateFlag);
+    // the same algo as before
+    if(algo === activeAlgo) {
+      setSameAlgoUpdateFlag(!sameAlgoUpdateFlag);
+    }
   }
+
+  // TODO?: add timer
 
   return (
     <div>
-      <VideoPlayer algo={activeAlgo} updateFlag={updateFlag}/>
+      <VideoPlayer defaultVideoSrc={defaultAlgo.videoSrc} algo={activeAlgo} sameAlgoUpdateFlag={sameAlgoUpdateFlag}/>
       <div className='bg-black lg:h-[50rem] h-[20rem]'></div>
-      <div className='flex lg:flex-row flex-col justify-around my-8'>
+      <Tutorial/>
+      <div className='flex lg:flex-row flex-col justify-around mb-8'>
         <ChooseOllAlgo setAlgo={setAlgo} activeAlgo={activeAlgo}/>
         <ChoosePllAlgo setAlgo={setAlgo} activeAlgo={activeAlgo}/>
       </div>

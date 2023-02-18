@@ -130,7 +130,7 @@ export const tscwAlgos: Algo[] = [
         imgRef: t2,
         videoSrc: "https://www.youtube.com/embed/8UtGK9ME5dg",
         startSecond: 22,
-        endSecond: 28
+        endSecond: 27
     },
     {
         title: "S1",
