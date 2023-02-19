@@ -1,6 +1,6 @@
 import { AlgoScrumbles } from './Types';
 
-export const Scrumbles: AlgoScrumbles[] = [
+export const scrumbles: AlgoScrumbles[] = [
   {
     title: 'OCLL6',
     scrumbles: ["B' U' B U' B U B2 U B2 U2 B'"],

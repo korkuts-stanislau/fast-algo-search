@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import './App.css';
 import { ChooseOllAlgo } from './ChooseOllAlgo';
 import { ChoosePllAlgo } from './ChoosePllAlgo';
@@ -30,9 +30,10 @@ function App() {
 
   useEffect(() => {
     window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
   }, []);
 
-  const onKeyDown = (ev: globalThis.KeyboardEvent) => {
+  const onKeyDown = useCallback((ev: globalThis.KeyboardEvent) => {
     const overwrittenKeys = ['KeyA', 'KeyL'];
     if (overwrittenKeys.includes(ev.code)) {
       ev.preventDefault();
@@ -42,7 +43,7 @@ function App() {
     } else if (ev.code === 'KeyL') {
       setFilter('unlearned');
     }
-  };
+  }, []);
 
   const setAlgoInfo = (algoInfo: UserAlgoInfo) => {
     const newAlgosInfo = userAlgosInfo.map((a) =>
@@ -73,7 +74,7 @@ function App() {
       />
       <div className="bg-black h-[40vh]"></div>
       <Tutorial clearStorage={handleClearStorage} />
-      <Trainer />
+      <Trainer userAlgosInfo={userAlgosInfo} />
       <div className="flex lg:flex-row flex-col justify-around mt-4 mb-8">
         <ChooseOllAlgo
           setAlgo={setAlgo}

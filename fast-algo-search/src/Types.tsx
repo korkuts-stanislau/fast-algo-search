@@ -9,6 +9,7 @@ export type Algo = {
 export type UserAlgoInfo = {
   title: string;
   isLearned: boolean;
+  isInTrainer: boolean;
 };
 
 export type Filter = 'all' | 'unlearned';

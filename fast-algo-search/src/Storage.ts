@@ -33,7 +33,7 @@ const defaultUserAlgosInfo: UserAlgoInfo[] = ocllAlgos
     oneSetDiagCornersAlgos,
   )
   .map((algo) => {
-    return { title: algo.title, isLearned: false };
+    return { title: algo.title, isLearned: false, isInTrainer: false };
   });
 
 export const getFromStorageOrGenerate = (): UserAlgoInfo[] => {

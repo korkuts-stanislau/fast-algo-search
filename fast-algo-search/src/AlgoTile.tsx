@@ -30,7 +30,7 @@ export const AlgoTile: React.FC<AlgoTileProps> = (props) => {
       </div>
       {!props.algoInfo.isLearned && (
         <button
-          className="bg-green-500 hover:bg-green-700 rounded-lg text-black py-[2px] px-[6px]"
+          className="bg-green-500 hover:bg-green-700 rounded-lg text-black py-[2px] px-[6px] w-[100px] mb-1"
           onClick={() =>
             props.setAlgoInfo({ ...props.algoInfo, isLearned: true })
           }
@@ -40,12 +40,32 @@ export const AlgoTile: React.FC<AlgoTileProps> = (props) => {
       )}
       {props.algoInfo.isLearned && (
         <button
-          className="bg-yellow-500 hover:bg-yellow-700 rounded-lg text-black py-[2px] px-[6px]"
+          className="bg-yellow-500 hover:bg-yellow-700 rounded-lg text-black py-[2px] px-[6px] w-[100px] mb-1"
           onClick={() =>
             props.setAlgoInfo({ ...props.algoInfo, isLearned: false })
           }
         >
           Unlearned
+        </button>
+      )}
+      {!props.algoInfo.isInTrainer && (
+        <button
+          className="bg-green-500 hover:bg-green-700 rounded-lg text-black py-[2px] px-[6px] w-[100px]"
+          onClick={() =>
+            props.setAlgoInfo({ ...props.algoInfo, isInTrainer: true })
+          }
+        >
+          Train
+        </button>
+      )}
+      {props.algoInfo.isInTrainer && (
+        <button
+          className="bg-yellow-500 hover:bg-yellow-700 rounded-lg text-black py-[2px] px-[6px] w-[100px]"
+          onClick={() =>
+            props.setAlgoInfo({ ...props.algoInfo, isInTrainer: false })
+          }
+        >
+          Don't train
         </button>
       )}
     </div>
