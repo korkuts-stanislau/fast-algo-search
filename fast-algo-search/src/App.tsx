@@ -71,7 +71,7 @@ function App() {
         algo={activeAlgo}
         sameAlgoUpdateFlag={sameAlgoUpdateFlag}
       />
-      <div className="bg-black lg:h-[40rem] h-[20rem]"></div>
+      <div className="bg-black h-[40vh]"></div>
       <Tutorial clearStorage={handleClearStorage} />
       <Trainer />
       <div className="flex lg:flex-row flex-col justify-around mt-4 mb-8">

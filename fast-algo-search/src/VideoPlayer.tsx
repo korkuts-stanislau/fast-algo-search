@@ -92,14 +92,19 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = (props) => {
 
   // if it is a new video
   useEffect(() => {
-    playerRef.current?.getInternalPlayer()?.loadVideoById({
-      videoId: fromVideoSrcToId(algo.videoSrc),
-      startSeconds: algo.startSecond,
-    });
+    playerRef.current
+      ?.getInternalPlayer()
+      ?.loadVideoById({
+        videoId: fromVideoSrcToId(algo.videoSrc),
+        startSeconds: algo.startSecond,
+      })
+      .then(() => {
+        playerRef.current?.getInternalPlayer()?.mute();
+      });
   }, [algo.videoSrc]);
 
   return (
-    <div className="fixed z-40 w-[100%] lg:h-[40rem] h-[20rem]">
+    <div className="fixed z-40 w-[100%] h-[40vh]">
       <YouTube
         ref={playerRef}
         opts={{
@@ -113,7 +118,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = (props) => {
           },
         }}
         videoId={fromVideoSrcToId(props.defaultVideoSrc)}
-        iframeClassName="w-[100%] lg:h-[40rem] h-[20rem]"
+        iframeClassName="w-[100%] h-[40vh]"
       />
     </div>
   );

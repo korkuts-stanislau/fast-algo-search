@@ -14,3 +14,5 @@ export type UserAlgoInfo = {
 export type Filter = 'all' | 'unlearned';
 
 export type AlgoGroup = { name: string; group: Algo[] };
+
+export type AlgoScrumbles = { title: string; scrumbles: string[] };
