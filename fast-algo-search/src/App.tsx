@@ -34,7 +34,7 @@ function App() {
   }, []);
 
   const onKeyDown = useCallback((ev: globalThis.KeyboardEvent) => {
-    const overwrittenKeys = ['KeyA', 'KeyL'];
+    const overwrittenKeys = ['KeyA', 'KeyL', 'KeyT'];
     if (overwrittenKeys.includes(ev.code)) {
       ev.preventDefault();
     }
@@ -42,6 +42,8 @@ function App() {
       setFilter('all');
     } else if (ev.code === 'KeyL') {
       setFilter('unlearned');
+    } else if (ev.code === 'KeyT') {
+      setFilter('train');
     }
   }, []);
 

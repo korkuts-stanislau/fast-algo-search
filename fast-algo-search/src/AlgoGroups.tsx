@@ -27,6 +27,9 @@ export const AlgoGroups: React.FC<AlgoGroupsProps> = (props) => {
           else if (props.filter === 'unlearned')
             return !props.userAlgosInfo.find((ai) => ai.title == a.title)!
               .isLearned;
+          else if (props.filter === 'train')
+            return props.userAlgosInfo.find((ai) => ai.title == a.title)!
+              .isInTrainer;
         });
         if (algos.length === 0) return undefined;
         return (

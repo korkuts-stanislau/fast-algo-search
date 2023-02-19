@@ -49,12 +49,12 @@ export const Tutorial: React.FC<TutorialProps> = (props) => {
               <span className={keyClassName}>L</span>
             </li>
             <li>
-              To generate next trainer algorithm press{' '}
-              <span className={keyClassName}>N</span>
+              To show only algorithms that you train press{' '}
+              <span className={keyClassName}>T</span>
             </li>
             <li>
-              To show easiest algorithms press{' '}
-              <span className={keyClassName}>E</span> (In process)
+              To generate next trainer algorithm press{' '}
+              <span className={keyClassName}>N</span>
             </li>
             <hr className="my-2" />
             <p>Info</p>

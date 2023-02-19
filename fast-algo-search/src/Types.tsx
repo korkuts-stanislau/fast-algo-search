@@ -12,7 +12,7 @@ export type UserAlgoInfo = {
   isInTrainer: boolean;
 };
 
-export type Filter = 'all' | 'unlearned';
+export type Filter = 'all' | 'unlearned' | 'train' | 'easy';
 
 export type AlgoGroup = { name: string; group: Algo[] };
 
