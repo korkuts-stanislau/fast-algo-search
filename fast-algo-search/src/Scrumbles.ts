@@ -111,7 +111,7 @@ export const scrumbles: AlgoScrumbles[] = [
   },
   {
     title: 'F3',
-    scrumbles: ["B' U' B R U' B' U2 B U2 B U' B' R'"],
+    scrumbles: ["L2 D2 U2 L2 R2 D2 U2 R' U2 R' F R' F' R2 U2 R'"],
   },
   {
     title: 'F4',

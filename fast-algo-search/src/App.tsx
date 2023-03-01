@@ -75,7 +75,7 @@ function App() {
         sameAlgoUpdateFlag={sameAlgoUpdateFlag}
       />
       <div className="bg-black h-[40vh]"></div>
-      <Tutorial clearStorage={handleClearStorage} />
+      <Tutorial clearStorage={handleClearStorage} setFilter={setFilter} />
       <Trainer userAlgosInfo={userAlgosInfo} />
       <div className="flex lg:flex-row flex-col justify-around mt-4 mb-8">
         <ChooseOllAlgo

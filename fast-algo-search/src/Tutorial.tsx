@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { Filter } from './Types';
 
 type TutorialProps = {
   clearStorage: () => void;
+  setFilter: (filter: Filter) => void;
 };
 
 const keyClassName = 'text-green-300';
@@ -42,15 +44,33 @@ export const Tutorial: React.FC<TutorialProps> = (props) => {
             </li>
             <li>
               To show all algorithms press{' '}
-              <span className={keyClassName}>A</span>
+              <span className={keyClassName}>A</span> or{' '}
+              <button
+                className="bg-red-700 hover:bg-red-800 active:bg-red-900 rounded-md px-[4px]"
+                onClick={() => props.setFilter('all')}
+              >
+                here
+              </button>
             </li>
             <li>
               To show unlearned algorithms press{' '}
-              <span className={keyClassName}>L</span>
+              <span className={keyClassName}>L</span> or{' '}
+              <button
+                className="bg-red-700 hover:bg-red-800 active:bg-red-900 rounded-md px-[4px]"
+                onClick={() => props.setFilter('unlearned')}
+              >
+                here
+              </button>
             </li>
             <li>
               To show only algorithms that you train press{' '}
-              <span className={keyClassName}>T</span>
+              <span className={keyClassName}>T</span> or{' '}
+              <button
+                className="bg-red-700 hover:bg-red-800 active:bg-red-900 rounded-md px-[4px]"
+                onClick={() => props.setFilter('train')}
+              >
+                here
+              </button>
             </li>
             <li>
               To generate next trainer algorithm press{' '}
